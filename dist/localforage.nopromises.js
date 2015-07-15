@@ -1246,8 +1246,8 @@
                                          dbInfo.description, dbInfo.size);
             } catch (e) {
                 return self.setDriver(self.LOCALSTORAGE).then(function() {
-    return self._initStorage(options);
-}).then(resolve)["catch"](reject);
+                    return self._initStorage(options);
+                }).then(resolve)["catch"](reject);
             }
 
             // Create our key/value table if it doesn't exist.
